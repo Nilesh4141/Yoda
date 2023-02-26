@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertical slider</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="Style.css">
+    <!----Fontaesome CDN Link---->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+
+ 
+  <div class="slider-container">
+    <div class="left-slide">
+      <div style="background-color: rgb(179, 14, 96)">
+        <h1>Yoda Quotes</h1>
+        <p>“Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.” </p>
+        <author>Yoda</author>
+      </div>
+      <div style="background-color: rgb(254, 160, 0)">
+        <h1>Yoda Quotes</h1>
+        <p> “Patience you must have, my young Padawan.” </p>
+        <author>Yoda</author>
+      </div>
+      <div style="background-color: rgb(231, 58, 95)">
+        <h1>Yoda Quotes</h1>
+        <p>“I don’t believe it!” “That is why you fail.” </p>
+        <author>Yoda</author>
+      </div>
+      <div style="background-color: rgb(176, 136, 240)">
+        <h1>Yoda Quotes</h1>
+        <p> “Great warrior. Hmm. Wars not make one great.”  </p>
+        <author>Yoda</author>
+      </div>
+    </div>
+    <div class="right-slide">
+      <div style="background-image: url('image/yoda1.jpg');"></div>
+      <div style="background-image: url('image/yoda2.jpg');"></div>
+      <div style="background-image: url('image/yoda3.jpg');"></div>
+      <div style="background-image: url('image/yoda4.jpg');"></div>
+    </div>
+    <div class="action-buttons">
+      <button class="down-button">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button class="up-button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="App.js"></script>
+  <script>
+    // Only show loader if JS is available
+    document.body.className += ' has-js';
+    // Option 1: Hide loader when 'load' event fires
+    window.onload = function() { document.body.className += ' loaded'; }
+    // Option 2: Hide loader after 2 seconds, in case the 'load' event never fires
+    setTimeout(function(){ document.body.className += ' loaded'; }, 1000 * 2);
+  </script>
+  <!-- Page content goes after this -->
+</body>
+</html>
